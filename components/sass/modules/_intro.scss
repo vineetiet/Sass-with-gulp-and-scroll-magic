@@ -1,0 +1,55 @@
+header{
+
+	.fullheight{
+
+		@include backImage('../images/hotel/splash_hotelphoto.jpg');
+
+		@include display-flex();
+		@include align-items(center);
+		@include justify-content(center);
+
+		.hgroup{
+
+			padding: 100px 0;
+
+			h1{
+
+				color: $light;
+				font-size: 5em;
+				font-weight: $heavy;
+				line-height: .8em;
+
+				@include text-shadow($dark 0 0 20px); //compass shadow
+
+				text-align: center;
+			}
+
+			h2{
+
+				display: block;
+				color: $light;
+				width: 60%;
+				margin: 0 auto;
+				text-align: center;
+				border: 1px solid $light;
+				background: rgba($headersubgb, .5);  //sass function
+				margin-top: 15px;
+				padding: 10px;
+				max-width: 200px;
+				font-size: 1.3em;
+
+			}
+
+			p{
+
+				text-align: center;
+				img{
+
+					padding-top: 50px;
+					max-width: 50px;
+				}
+			}
+
+		}
+	}
+}
